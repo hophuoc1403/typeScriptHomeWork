@@ -70,12 +70,9 @@ box.innerHTML = num;
 var btn = document.querySelectorAll(".btn-primary");
 for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener("click", (e) => {
-        var parent = e.target.parentElement.parentElement;
-        var img_check = parent.querySelector(".img-checked");
-        var content_check = parent.querySelector(".content-check");
-        alert("name : " +
-            content_check.innerHTML +
-            "        link image: " +
-            img_check.src);
+        alert("-name : " +
+            productName[i].name +
+            "         -link img : " +
+            productName[i].img);
     });
 }
